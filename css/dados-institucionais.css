@@ -81,9 +81,35 @@
 .container_card-infos .lista li {
     list-style: disc;
 }
-@media(max-width: 768px){
-    .container_card{
+/* Para dispositivos de 768px ou menos */
+@media (max-width: 768px) {
+    .container_card {
+        width: 100%;
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+    }
+
+    .container_card-infos {
+        width: 100%;
+        max-width: 100%; 
+    }
+}
+/* Para dispositivos entre 768px e 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container_card {
+        width: 90%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        gap: 16px; 
+    }
+
+    .container_card-infos {
+        width: 45%;
+        max-width: 480px;
     }
 }
 /* Fim dados institucionais*/
