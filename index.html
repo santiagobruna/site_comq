@@ -3,46 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
+    <title>Dados Institucionais</title>
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" href="css/dados-institucionais.css" />
+    <link rel="stylesheet" href="./css/reset.css">
     <!-- JS -->
-    <script src="js/app.js/" defer></script>
+    <!-- <script src="js/app.js/" defer></script> -->
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <h1>Comq!</h1>
-      </div>
-    </header>
-
-    <section class="hero">
-      <div class="container hero__container">
-        <h1>Transformando vidas através de oportunidades</h1>
-        <p>
-          O Centro de Oportunidades do Mário Quintana (COMQ) é uma iniciativa
-          que conecta jovens e empreendedores do bairro a oportunidades de
-          emprego, capacitação e desenvolvimento. Acreditamos no potencial
-          transformador da comunidade quando recebe as ferramentas certas.
-        </p>
-        <div class="hero__buttons">
-          <a href="#" class="hero__buttons-accent">Conheça nossos projetos</a>
-          <a href="#" class="hero__buttons-white">Seja um parceiro</a>
-        </div>
-      </div>
-
-      <div class="hero__bg">
-        <img
-          src="./images/hero-bg.webp"
-          alt="Imagem de fundo"
-          aria-hidden="true"
-          width="1920"
-          height="564"
-          decoding="async"
-        />
-      </div>
-    </section>
+    <section class="container">
+        <!-- Dados Institucionais -->
+        <section class="sub_dados-institucionais">
+          <div class="sub-introductions">
+            <h2 class="titulos principal-title">Dados Institucionais</h2>
+            <p class="descriptions-cards descriptions-data">
+              Conheça nossa missão, visão e valores, e saiba como sua empresa pode se tornar
+              parceira do COMQ.
+            </p>
+          </div>
+          <div class="container_card">
+              <div class="container_card-infos">
+                <img src="./images/Overlay-missao.png" alt="Ícone de missão" class="image">
+                <h3 class="titulos secundario-title">Missão</h3>
+                <p class="descriptions-cards">
+                  Conectar jovens e empreendedores do bairro Mário
+                  Quintana a oportunidades de desenvolvimento pessoal e
+                  profissional, promovendo a transformação social através
+                  da educação e do trabalho.
+                </p>
+              </div>
+              <div class="container_card-infos">
+                <img src="./images/Overlay-visao.png" alt="Ícone de visão" class="image">
+                <h3 class="titulos secundario-title">Visão</h3>
+                <p class="descriptions-cards">
+                  Ser reconhecido como um centro de referência em
+                  geração de oportunidades, contribuindo para a redução
+                  das desigualdades sociais e o desenvolvimento
+                  econômico sustentável da comunidade.
+                </p>
+              </div>
+              <div class="container_card-infos">
+                <img src="./images/Overlay-valores.png" alt="Ícone de valores" class="image">
+                <h3 class="titulos secundario-title">Valores</h3>
+                <ul class="descriptions-cards lista">
+                  <li>Compromisso com a comunidade</li>
+                  <li>Transparência em todas as ações</li>
+                  <li>Compromisso com a comunidade</li>
+                  <li>Inclusão e diversidade</li>
+                  <li>Inovação e criatividade</li>
+                  <li>Colaboração e trabalho em rede</li>
+                </ul>
+              </div>
+          </div>
+        </section>
+        <!-- Fim Dados Institucionais -->
+    </section>  
   </body>
 </html>
