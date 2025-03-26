@@ -83,17 +83,23 @@
 }
 /* Para dispositivos de 768px ou menos */
 @media (max-width: 768px) {
+    .sub-introductions .descriptions-data{
+        font-size: 20px;  
+        line-height: 24px; 
+        margin-top: 16px; 
+        margin-bottom: 64px; 
+        max-width: 90%; 
+    }
     .container_card {
         width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 32px;
+        display: block;
+        margin: 0 auto;
     }
 
     .container_card-infos {
         width: 100%;
         max-width: 100%; 
+        margin-bottom: 32px;
     }
 }
 /* Para dispositivos entre 768px e 1024px */
@@ -113,3 +119,67 @@
     }
 }
 /* Fim dados institucionais*/
+
+/* Parceiros */
+.container_parceiros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 24px 0;
+    min-height: auto;
+    margin-top: 32px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.parceiros-titulos {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+    margin: 32px 0 24px 0;
+}
+.container_parceiros-cards {
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.card-parceiros{
+    border-radius: 8px;
+    background-color: rgba(249, 250, 251, 1);
+    padding: 16px 104px;
+    margin-bottom: 32px;
+}
+.card-parceiros img {
+    width: 96px;
+    cursor: pointer;
+}
+/* Para dispositivos de 768px ou menos */
+@media (max-width: 768px) {
+    .container_parceiros-cards {
+        display: block;
+        width: 100%; 
+        margin: 0 auto;
+    }
+}
+/* Para dispositivos entre 768px e 1024px */
+@media (min-width: 768px) and (max-width: 1348px) {
+    .container_parceiros{
+        width: 100%;
+        max-width: 100%; 
+    }
+    .container_parceiros-cards  {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        justify-content: center; 
+    }
+}
+/* Fim Parceiros */
