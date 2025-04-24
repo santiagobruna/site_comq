@@ -16,7 +16,7 @@
   </head>
   <body>
     <section class="container">
-        <!-- Dados Institucionais -->
+        <!-- Início Dados Institucionais -->
         <section class="sub_dados-institucionais">
           <div class="sub-introductions">
             <h2 class="titulos principal-title">Dados Institucionais</h2>
@@ -61,25 +61,86 @@
           </div>
         </section>
         <!-- Fim Dados Institucionais -->
-        <!-- Parceiros -->
+        <!-- Início Parceiros -->
         <section class="container_parceiros">
           <h2 class="titulos parceiros-titulos">Parceiros</h2>
-          <div class="container_parceiros-cards">
-            <div class="card-parceiros">
-              <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
+        
+          <div class="carrossel-wrapper">
+            <button class="carrossel-btn left" aria-label="Anterior">&#10094;</button>
+        
+            <div class="carrossel-track">
+              <div class="card-parceiros">
+                <img src="./images/solo.png" alt="Parceiro Solo">
+              </div>
+              <div class="card-parceiros">
+                <img src="./images/mulheres-convergencia.png" alt="Parceiro Mulheres em Convergência">
+              </div>
+              <div class="card-parceiros">
+                <img src="./images/logo-woman.png" alt="Parceiro Woman">
+              </div>
+              <div class="card-parceiros">
+                <img src="./images/logo-despertar.png" alt="Parceiro Despertar">
+              </div>
+              <div class="card-parceiros">
+                <img src="./images/sabao-tingua.png" alt="Parceiro Sabão da Tingua">
+              </div>
+              <div class="card-parceiros">
+                <img src="./images/projeto-social.png" alt="Parceiro Projeto social">
+              </div>
             </div>
-            <div class="card-parceiros">
-              <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
-            </div>
-            <div class="card-parceiros">
-              <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
-            </div>
-            <div class="card-parceiros">
-              <img src="./images/parceiros.png" alt="Imagem do parceiro da ONG">
-            </div>
+            <button class="carrossel-btn right" aria-label="Próximo">&#10095;</button>
           </div>
         </section>
-        <!-- Fim Parceiros -->
+        <!-- Fim Parceiros --> 
+        <!-- Início Seja um parceiro -->
+        <section class="partnership">
+          <div class="partnership__info">
+            <div class="partnership__header">
+              <img src="./images/SVG.png" alt="Ícone de Ilustração">
+              <h2 class="partnership__title">Seja um Parceiro</h2>
+            </div>
+            <p class="partnership__description">
+              Sua empresa pode fazer parte dessa transformação social. Ao se tornar parceira do COMQ, você contribui diretamente para o
+              desenvolvimento da comunidade e ganha visibilidade como uma organização socialmente responsável.
+            </p>
+            <ul class="partnership__benefits">
+              <li class="partnership__benefit">
+                <img src="./images/first-icon.png" alt="Ilustração primeiro ícone">
+                Ofereça vagas de emprego ou estágio para jovens do bairro.
+              </li>
+              <li class="partnership__benefit">
+                <img src="./images/second-icon.png" alt="Ilustração segundo ícone">
+                Patrocine eventos, workshops ou cursos de capacitação.
+              </li>
+              <li class="partnership__benefit">
+                <img src="./images/three-icon.png" alt="Ilustração terceiro ícone">
+                Disponibilize profissionais para mentorias e palestras.
+              </li>
+            </ul>
+            <a href="#" class="partnership__cta">Quero ser parceiro</a>
+          </div>
+          
+          <div class="partnership__details">
+            <h3 class="partnership__subtitle">Certificações</h3>
+            <div class="certification-card">
+              <div class="certification-card__icon">
+                <img src="./images/certificacao.png" alt="Ícone de certificação">
+              </div>
+              <div class="certification-card__info">
+                <span class="certification-card__title">Certificação OSCIP</span>
+                <p class="certification-card__description">
+                  Organização da Sociedade Civil de Interesse Público
+                </p>
+              </div>
+            </div>
+            
+            <h3 class="partnership__subtitle">Contato</h3>
+            <span class="partnership__contact">parcerias@comq.org.br</span>
+            <span class="partnership__contact">(51) 99999-9999</span>
+          </div>
+        </section>
+        <!-- Fim Seja um parceiro -->
     </section>  
+    <script src="js/carousel.js"></script>
   </body>
 </html>
